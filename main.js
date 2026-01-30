@@ -20,7 +20,7 @@ app.get('/order/:id', async (req, res) => {
        product: "Sample Product",
        quantity: 1,
        price: basicPrice + shippingCostResponse.data,
-       shippingAddress: "123 Blue Street, Manhattan, NY",
+       shippingAddress: customerInfoResponse.data.shippingAddress,
        customerInfo: customerInfoResponse.data  
     });
 } catch (error) {
