@@ -23,6 +23,7 @@ Now, go to the cloned folder and run the following installations
 cd simple-node-orderservice
 npm install express
 npm install axios
+node main.js
 ```
 ## Hosting Details
 The service contains 1 endpoint, which is GET order/:orderId, and it is given out on port 3000 and has been hosted or deployed locally, so whichever machine invokes this endpoint can access by the URL `http://<ip of the machine where this service is hosted>:3000/order/:id`
